@@ -1,0 +1,60 @@
+# 0. Original data format
+map = word=0,tag=1,answer=2
+
+# 1. Token-based features
+useWord=true
+useLemmas=true
+useLemmaAsWord=true
+
+# 1.1. Word shape
+#wordShape=chris1
+wordShape=chris2useLC
+useTypeSeqs=true
+useTypeSeqs2=true
+useTypeSeqs3=true
+useTypeySequences=true
+
+# 1.2 Position in the sentence
+usePosition=true
+
+# 1.3 Prefix & Suffix features
+useNGrams=true
+noMidNGrams=false
+maxNGramLeng=6
+
+# 2. Context-based features
+# 2.1 Previous/Next words
+usePrev=true
+useNext=true
+useWordPairs=true
+usePrevNextLemmas=true
+
+# 2.2 Disjunctive words
+useDisjunctive=true
+# The following setting works for laptops only
+#disjunctionWidth=2
+# The following three settings work for restaurants only
+disjunctionWidth=4
+useDisjunctiveShapeInteraction=true
+useWideDisjunctive=true
+wideDisjunctionWidth=4
+
+# 2.3 Context labels
+useSequences=true
+usePrevSequences=true
+useClassFeature=true
+useSequences=true
+usePrevSequences=true
+useNextSequences=true
+maxLeft=2
+useLongSequences=true
+useBoundarySequences=true
+useTaggySequences=true
+useExtraTaggySequences=true
+useTaggySequencesShapeInteraction=true
+strictlyFirstOrder=true
+
+# 3. POS tag
+#useWordTag=true
+#useTags=true
+
